@@ -1,7 +1,13 @@
-# アプリケーション名
+# お問い合わせフォーム
 
 ## 環境構築
-- Dockerのビルドからマイグレーション、シーディングまでを記述する
+1. git clone
+2. docker compose up -d build
+MySQLはOSによって起動しない場合があるのでそれぞれPCに合わせてdocker-compose.ymlファイルを編集してください。
+Laravel環境構築
+1. docker compose exec php bash
+2. composer
+- シーディングまでを記述する
 
 ## 使用技術(実行環境)
 - 例) Laravel 8.x(言語やフレームワーク、バージョンなどが記載されていると良い)
