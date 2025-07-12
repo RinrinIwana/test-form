@@ -25,7 +25,7 @@ PHP 7.4.9
 mysql  Ver 15.1
 
 ## ER図
-<img width="370" height="500" alt="スクリーンショット 2025-07-13 5 38 57" src="https://github.com/user-attachments/assets/fb2dae02-133b-4684-bb3f-483d8b0a45c5" />
+<img width="370" height="478" alt="スクリーンショット 2025-07-13 6 07 20" src="https://github.com/user-attachments/assets/f2bac116-80d0-402a-bafc-0827cd8c779b" />
 
 
 ## URL
