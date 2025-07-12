@@ -4,7 +4,9 @@
 Dockerビルド
 1. git clone
 2. docker compose up -d build
+
 MySQLはOSによって起動しない場合があるのでそれぞれPCに合わせてdocker-compose.ymlファイルを編集してください。
+
 使用PCがMacのApple Silicon／M1チップのため、platformを指定してamd64イメージを使用しています。
 
 Laravel環境構築
