@@ -1,0 +1,163 @@
+
+.contact-form__content {
+  margin: 0 auto;
+  padding: 30px 15px;
+  max-width: 1230px;
+}
+
+.contact-form__heading {
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: serif;
+}
+
+.form {
+  width: 90%;/* スマホでも崩れにくい幅 */
+  max-width: 800px;/* 画面が広すぎても読みやすさを保つ */
+  margin: 0 auto;
+  text-align: left;/*中央寄せを左揃えに */
+}
+
+.form__group {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+/* ラベル部分（左側） */
+.form__group-title {
+  width: 30%;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+/* 入力欄（右側） */
+.form__group-content {
+  width: 70%;
+}
+
+/* お名前（姓＋名）だけ横並びに */
+.form__group-content--name {
+  display: flex;
+  gap: 10px;
+}
+
+.form__group-content--name .form__input--text {
+  width: 50%;
+}
+
+/* 電話番号横並びに */
+.form__group-content--tel {
+  display: flex;
+  gap: 10px;
+}
+
+.form__group-content--tel .form__input--text {
+  width: 50%;
+}
+
+.form__label--required {
+  margin-left: 5px;
+  padding: 4px 6px;
+  border-radius: 3px;
+  background: #fafafa;
+  color: #aaa;
+}
+
+.form__error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* セレクト */
+.form__group-content--select {
+  display: inline-block;
+  vertical-align: middle;
+  height: 50px;
+}
+
+/* ラジオボタンの並びを整える */
+.form__group-content--radio {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* ラジオボタンと文字の間のスペース */
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-sizing: border-box;
+  appearance: none;
+}
+
+.form__input--textarea textarea {
+  height: 180px;
+}
+
+/* すべてのテキスト・メール・電話の input */
+/* テキストエリアも合わせて整える */
+.form__input--text,
+.form__input--textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form__button {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.form__button-submit {
+  padding: 10px;
+  width: 30%;
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+  .form__group {
+    flex-direction: column;
+  }
+
+  .form__group-title,
+  .form__group-content {
+    width: 100%;
+  }
+
+  .form__group-content--name {
+    flex-direction: column;
+  }
+
+  .form__group-content--name .form__input--text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .form__group-content--radio {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

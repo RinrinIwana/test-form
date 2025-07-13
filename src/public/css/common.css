@@ -1,0 +1,51 @@
+/* common.css - 共通スタイル */
+
+/* ヘッダー共通スタイル */
+.header {
+    background: #fff;
+    border-bottom: 1px solid #cccccc;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+    text-align: center;
+}
+
+.header__logo {
+    color: #6b5d50;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: serif;
+}
+
+.main-container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    font-family: serif;
+    color: #6b5d50;
+    text-align: center;
+}
+
+
+
+
+
+body {
+    font-family: sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* レスポンシブの基準 */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+}

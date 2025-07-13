@@ -1,0 +1,210 @@
+.admin-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-container th,
+.admin-container td {
+    border: none;
+    /* 列間の線は消す */
+    padding: 0.75em 1em;
+    color: #6b5d50;
+}
+
+.admin-container tr {
+    border-bottom: 1px solid #cccccc;
+    /* 行ごとに下線だけ表示 */
+}
+
+.admin-container th {
+    background-color: #8c7765;
+    text-align: left;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.admin-container tr:last-child {
+    border-bottom: none;
+    /* 最後の行は線なし */
+}
+
+.admin-container {
+    max-width: 960px;
+    /* or 800px / 1024px でもOK */
+    margin: 0 auto;
+    /* 中央寄せ */
+    padding: 20px;
+}
+
+.admin-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.search-form__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-form__row input,
+.search-form__row select,
+.search-form__row button,
+.search-form__row .reset-button {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.reset-button {
+    background: #ddd;
+    border: none;
+    text-decoration: none;
+    color: #6b5d50;
+    padding: 8px 12px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 10px;
+    }
+
+    .admin-table-wrapper {
+        overflow-x: auto;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+/* ページネーション */
+.pagination-container {
+    display: flex;
+    justify-content: flex-end;
+    /* 右寄せ */
+    margin-bottom: 20px;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.pagination li {
+    margin: 0 2px;
+}
+
+.pagination li a,
+.pagination li span {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    color: #6b5d50;
+    /* 落ち着いた茶系（画像参考） */
+    text-decoration: none;
+    border-radius: 0;
+    /* 四角く */
+    font-size: 14px;
+    background-color: white;
+}
+
+.pagination li.active span {
+    background-color: #8c7765;
+    /* 選択中の茶色背景 */
+    color: #fff;
+    border-color: #8c7765;
+}
+
+.pagination li.disabled span {
+    color: #ccc;
+    pointer-events: none;
+    border-color: #ccc;
+}
+
+
+
+
+
+/*モーダル関連*/
+.open-modal-button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(190, 170, 170);
+    text-decoration: none;
+    border: 1px solid #cccccc;
+}
+
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-wrapper:target {
+    display: block;
+}
+
+.modal {
+    position: relative;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.modal p {
+    margin-bottom: 20px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.delete-button {
+    padding: 8px 16px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-modal {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 20px;
+    color: #aaa;
+    text-decoration: none;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+

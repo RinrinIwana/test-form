@@ -1,0 +1,64 @@
+.auth {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.auth__heading {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: serif;
+}
+
+.auth-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+}
+
+.auth-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #6b5d50;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #eee;
+    background-color: #f5f5f5;
+}
+
+.register-button {
+    background-color: #8c7765;
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.login-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 14px;
+    color: #8c7765;
+    text-decoration: none;
+}
